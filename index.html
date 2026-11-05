@@ -146,6 +146,30 @@
           <p class="tags">Python · scikit-learn · pandas · anomaly detection</p>
         </article>
 
+        <article class="project-card">
+          <img class="project-cover" src="covers/dbt-analytics-engineering.png" alt="dbt Analytics Engineering cover">
+          <h3><a href="https://github.com/rudhrestam/dbt-analytics-engineering" target="_blank" rel="noopener">dbt Analytics Engineering</a></h3>
+          <p class="project-where">Personal project — synthetic data only</p>
+          <p>A complete dbt project on synthetic restaurant sales data — staging → intermediate → marts in DuckDB, with revenue recomputed from line items rather than trusted from source totals. In the verified run, dbt build passes 39/39 (8 models, 31 tests) and the data-quality mart catches all 19 planted order-total mismatches, plus 12 orders with no line items.</p>
+          <p class="tags">dbt · DuckDB · Python · data quality</p>
+        </article>
+
+        <article class="project-card">
+          <img class="project-cover" src="covers/langchain-rag-agent.png" alt="LangChain RAG Agent cover">
+          <h3><a href="https://github.com/rudhrestam/langchain-rag-agent" target="_blank" rel="noopener">LangChain RAG Agent</a></h3>
+          <p class="project-where">Personal project — synthetic data only</p>
+          <p>A LangChain retrieval agent over 10 synthetic operations runbooks: documents are chunked, embedded with MiniLM, and indexed in FAISS; the agent answers only from retrieved passages, cites the source file for every answer, and refuses when nothing is close enough. On its 13-question evaluation it scores hit-rate@3 of 13/13 — every correct source at rank 1 — and refuses all 3 off-corpus probes.</p>
+          <p class="tags">Python · LangChain · FAISS · vector search</p>
+        </article>
+
+        <article class="project-card">
+          <img class="project-cover" src="covers/docker-kubernetes-ml-service.png" alt="Docker &amp; Kubernetes ML Service cover">
+          <h3><a href="https://github.com/rudhrestam/docker-kubernetes-ml-service" target="_blank" rel="noopener">Docker &amp; Kubernetes ML Service</a></h3>
+          <p class="project-where">Personal project — synthetic data only</p>
+          <p>An ML inference service packaged the production way: a scikit-learn churn model (ROC-AUC 0.7964 on held-out synthetic data) served by FastAPI, containerised with Docker and deployed with Kubernetes manifests carrying health probes and resource limits. A 60-prediction smoke test reports p95 latency of 63.9 ms.</p>
+          <p class="tags">Python · FastAPI · Docker · Kubernetes</p>
+        </article>
+
       </div>
     </div>
   </section>
