@@ -108,6 +108,18 @@
           <h3><a href="https://github.com/rudhrestam/llm-knowledge-retrieval-agent" target="_blank" rel="noopener">LLM Knowledge Retrieval Agent</a></h3>
           <p class="project-where">Demo of production work at Morgan Stanley</p>
           <p>A retrieval agent that answers operations questions from runbooks and documentation, with sources cited — and a guardrail that makes it refuse rather than guess when nothing in the knowledge base supports an answer. In production, this pattern put team knowledge in reach of the whole operations team without external LLM tools.</p>
+          <div class="flow">
+            <p class="flow-label">How data moves</p>
+            <div class="flow-steps">
+              <span class="flow-step">Engineer asks a question</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Agent searches runbooks &amp; docs</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Answer shown with its source</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Refuses rather than guesses</span>
+            </div>
+          </div>
           <p class="tags">Python · scikit-learn · TF-IDF retrieval</p>
           </div>
         </article>
@@ -117,6 +129,18 @@
           <h3><a href="https://github.com/rudhrestam/server-health-verification-framework" target="_blank" rel="noopener">Server Health Verification Framework</a></h3>
           <p class="project-where">Demo of production work at Morgan Stanley</p>
           <p>Parallel health-check automation: configurable checks run across many targets at once, with per-check validation, a summary report, and an audit log. The production version verifies the production and test server fleet after OS patching, with zero missed checks since launch.</p>
+          <div class="flow">
+            <p class="flow-label">How data moves</p>
+            <div class="flow-steps">
+              <span class="flow-step">Fleet of servers</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Checks run in parallel</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Failures flagged</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Summary report &amp; audit log</span>
+            </div>
+          </div>
           <p class="tags">Python · concurrent.futures · automation</p>
         </article>
 
@@ -125,6 +149,18 @@
           <h3><a href="https://github.com/rudhrestam/customer-churn-prediction" target="_blank" rel="noopener">Customer Churn Prediction</a></h3>
           <p class="project-where">Demo of production work at McDonald's</p>
           <p>Customer-360 style churn modeling: transaction, engagement, and feedback-sentiment features feed a classifier whose scores become a daily-insights summary. The production platform covered nightly restaurant sales data with models at 70–90% accuracy. This demo runs on synthetic data only.</p>
+          <div class="flow">
+            <p class="flow-label">How data moves</p>
+            <div class="flow-steps">
+              <span class="flow-step">Sales, engagement &amp; feedback</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Features built &amp; cleaned</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Model scores churn risk</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Daily insights for teams</span>
+            </div>
+          </div>
           <p class="tags">Python · scikit-learn · feature engineering</p>
         </article>
 
@@ -133,6 +169,18 @@
           <h3><a href="https://github.com/rudhrestam/global-etl-data-pipeline" target="_blank" rel="noopener">Global ETL Data Pipeline</a></h3>
           <p class="project-where">Demo of production work at McDonald's</p>
           <p>Batch ETL with a data-quality layer that reverts and quarantines bad files instead of loading them — extract, validate every row, load clean data, reload safely after a fix. The production pipeline runs nightly across 6+ global markets.</p>
+          <div class="flow">
+            <p class="flow-label">How data moves</p>
+            <div class="flow-steps">
+              <span class="flow-step">Nightly files from 6+ markets</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Every row validated</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Bad files quarantined</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Clean data loaded for reports</span>
+            </div>
+          </div>
           <p class="tags">Python · SQLite · Airflow pattern · data quality</p>
         </article>
 
@@ -141,6 +189,18 @@
           <h3><a href="https://github.com/rudhrestam/solar-grid-efficiency-ai" target="_blank" rel="noopener">Solar Grid Efficiency AI</a></h3>
           <p class="project-where">Personal project — AI for energy systems</p>
           <p>Why does a solar plant export so much less than it generates? This demo simulates a 300 kWp plant on synthetic data, tracks every loss stage between the panels and the grid meter, and uses ML to forecast generation, flag underperforming strings, and rank the fixes by recoverable energy. In the demo run, 16.2% of generated energy never reaches the grid.</p>
+          <div class="flow">
+            <p class="flow-label">How data moves</p>
+            <div class="flow-steps">
+              <span class="flow-step">Solar plant data</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Losses tracked at each stage</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Forecasts &amp; fault flags</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Fixes ranked by energy recovered</span>
+            </div>
+          </div>
           <p class="tags">Python · scikit-learn · pandas · energy systems</p>
         </article>
 
@@ -149,6 +209,18 @@
           <h3><a href="https://github.com/rudhrestam/healthcare-claims-intelligence" target="_blank" rel="noopener">Healthcare Claims Intelligence</a></h3>
           <p class="project-where">Demo project — synthetic data only</p>
           <p>Denial prediction on 5,930 synthetic claims: a GradientBoosting model (ROC-AUC 0.795) scores each claim's denial risk before submission, and the analysis ranks what's actually driving denials — missing prior authorisation denies at 63.9% vs 16.2% without — with an estimate of the denied dollars recoverable by fixing the top driver.</p>
+          <div class="flow">
+            <p class="flow-label">How data moves</p>
+            <div class="flow-steps">
+              <span class="flow-step">Claims come in</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Denial risk scored</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Top drivers ranked</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Dollars recoverable, shown</span>
+            </div>
+          </div>
           <p class="tags">Python · scikit-learn · pandas · classification</p>
         </article>
 
@@ -157,6 +229,18 @@
           <h3><a href="https://github.com/rudhrestam/regulatory-reporting-data-quality" target="_blank" rel="noopener">Regulatory Reporting Data Quality</a></h3>
           <p class="project-where">Demo project — synthetic data only</p>
           <p>A pre-submission data-quality framework for financial reporting extracts: 14 named checks across schema, completeness, validity, uniqueness, consistency, and reconciliation against a control file. In the demo run, all 295 planted defects in 5,040 synthetic records are caught and quarantined — a 94.15% DQ score.</p>
+          <div class="flow">
+            <p class="flow-label">How data moves</p>
+            <div class="flow-steps">
+              <span class="flow-step">Reporting extracts</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">14 quality checks run</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Defects caught &amp; quarantined</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Clean submission, ready to file</span>
+            </div>
+          </div>
           <p class="tags">Python · pandas · data quality · validation</p>
         </article>
 
@@ -165,6 +249,18 @@
           <h3><a href="https://github.com/rudhrestam/restaurant-demand-forecasting" target="_blank" rel="noopener">Restaurant Demand Forecasting</a></h3>
           <p class="project-where">Demo project — synthetic data only</p>
           <p>Daily demand forecasting for 8 synthetic restaurants. A RandomForest over day-of-week, holidays, weather, promotions, events, and feedback sentiment forecasts orders at MAE 28.0 (R² 0.832), beating a naive last-week baseline by 22.6% — then turns next week's forecast into prep and staffing tiers for each location.</p>
+          <div class="flow">
+            <p class="flow-label">How data moves</p>
+            <div class="flow-steps">
+              <span class="flow-step">Sales, weather &amp; events</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Next week's demand forecast</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Prep &amp; staffing tiers</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Right food, right staff</span>
+            </div>
+          </div>
           <p class="tags">Python · scikit-learn · pandas · forecasting</p>
         </article>
 
@@ -173,6 +269,18 @@
           <h3><a href="https://github.com/rudhrestam/server-log-anomaly-detection" target="_blank" rel="noopener">Server Log Anomaly Detection</a></h3>
           <p class="project-where">Demo project — synthetic data only</p>
           <p>A generic log-anomaly demo over roughly 190K synthetic log lines from 10 hosts. Lines are parsed into per-host 30-minute windows and scored two ways — IsolationForest and per-host z-score baselines — catching 42 of 46 planted anomaly windows between them: an error burst, a latency spike, and one host failing slowly.</p>
+          <div class="flow">
+            <p class="flow-label">How data moves</p>
+            <div class="flow-steps">
+              <span class="flow-step">Log lines stream in</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Parsed into 30-min windows</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Anomalies scored</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Bursts &amp; slow failures caught</span>
+            </div>
+          </div>
           <p class="tags">Python · scikit-learn · pandas · anomaly detection</p>
         </article>
 
@@ -181,6 +289,18 @@
           <h3><a href="https://github.com/rudhrestam/dbt-analytics-engineering" target="_blank" rel="noopener">dbt Analytics Engineering</a></h3>
           <p class="project-where">Personal project — synthetic data only</p>
           <p>A complete dbt project on synthetic restaurant sales data — staging → intermediate → marts in DuckDB, with revenue recomputed from line items rather than trusted from source totals. In the verified run, dbt build passes 39/39 (8 models, 31 tests) and the data-quality mart catches all 19 planted order-total mismatches, plus 12 orders with no line items.</p>
+          <div class="flow">
+            <p class="flow-label">How data moves</p>
+            <div class="flow-steps">
+              <span class="flow-step">Raw sales data</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Staging, intermediate &amp; marts</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">31 tests run</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Trusted datasets for analysts</span>
+            </div>
+          </div>
           <p class="tags">dbt · DuckDB · Python · data quality</p>
         </article>
 
@@ -189,6 +309,18 @@
           <h3><a href="https://github.com/rudhrestam/langchain-rag-agent" target="_blank" rel="noopener">LangChain RAG Agent</a></h3>
           <p class="project-where">Personal project — synthetic data only</p>
           <p>A LangChain retrieval agent over 10 synthetic operations runbooks: documents are chunked, embedded with MiniLM, and indexed in FAISS; the agent answers only from retrieved passages, cites the source file for every answer, and refuses when nothing is close enough. On its 13-question evaluation it scores hit-rate@3 of 13/13 — every correct source at rank 1 — and refuses all 3 off-corpus probes.</p>
+          <div class="flow">
+            <p class="flow-label">How data moves</p>
+            <div class="flow-steps">
+              <span class="flow-step">Question asked</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Relevant passages retrieved</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Answer from sources only</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Refuses off-topic questions</span>
+            </div>
+          </div>
           <p class="tags">Python · LangChain · FAISS · vector search</p>
         </article>
 
@@ -197,6 +329,18 @@
           <h3><a href="https://github.com/rudhrestam/docker-kubernetes-ml-service" target="_blank" rel="noopener">Docker &amp; Kubernetes ML Service</a></h3>
           <p class="project-where">Personal project — synthetic data only</p>
           <p>An ML inference service packaged the production way: a scikit-learn churn model (ROC-AUC 0.7964 on held-out synthetic data) served by FastAPI, containerised with Docker and deployed with Kubernetes manifests carrying health probes and resource limits. A 60-prediction smoke test reports p95 latency of 63.9 ms.</p>
+          <div class="flow">
+            <p class="flow-label">How data moves</p>
+            <div class="flow-steps">
+              <span class="flow-step">Model trained</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Packaged in Docker</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Deployed on Kubernetes</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Predictions served fast</span>
+            </div>
+          </div>
           <p class="tags">Python · FastAPI · Docker · Kubernetes</p>
         </article>
 
@@ -205,6 +349,18 @@
           <h3><a href="https://github.com/rudhrestam/textile-refund-processing" target="_blank" rel="noopener">Textile Refund Processing</a></h3>
           <p class="project-where">Demo project — synthetic data only</p>
           <p>A refund desk for a textile shop that takes the stress out of refunds: a policy engine gives staff a clear recommendation for every request, a guided workflow with an audit trail carries it through, kind customer messages go out at each step, and a short feedback survey after each resolution turns refunds into reviews. A 48-test suite covers every policy outcome, workflow move, and message template.</p>
+          <div class="flow">
+            <p class="flow-label">How data moves</p>
+            <div class="flow-steps">
+              <span class="flow-step">Customer asks for a refund</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Policy engine recommends</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Guided workflow, audit trail</span>
+              <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+              <span class="flow-step">Customer messaged &amp; feedback collected</span>
+            </div>
+          </div>
           <p class="tags">Python · SQLite · pytest</p>
         </article>
 
