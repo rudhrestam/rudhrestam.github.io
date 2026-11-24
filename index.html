@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -28,7 +28,8 @@
 <main id="top">
 
   <section class="hero">
-    <div class="container">
+    <div class="container hero-grid">
+      <div class="hero-copy">
       <p class="hero-eyebrow">Atlanta, GA · Open to AI/ML Engineer roles</p>
       <h1>Rudresh</h1>
       <p class="hero-headline">AI/ML Engineer | LLM Agents &amp; GenAI Systems | Python | AWS, Azure | 8+ Years Shipping Production ML</p>
@@ -44,11 +45,24 @@
         <span>Data Pipelines</span>
         <span>Automation</span>
       </div>
+      </div>
+      <div class="hero-visual">
+        <div class="terminal">
+          <div class="terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="terminal-title">retrieval-agent — in production</span></div>
+          <div class="terminal-body">
+            <p><span class="t-prompt">$</span> ask "How do I verify the fleet after patching?"</p>
+            <p><span class="t-ok">✓</span> Answered from 3 sources — runbook, config, wiki</p>
+            <p><span class="t-ok">✓</span> Guardrail: refuses to answer when no source supports it</p>
+            <p><span class="t-dim"># The ops team uses it daily. No external LLM tools.</span></p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="about" class="section">
     <div class="container">
+      <p class="section-eyebrow">01 · About</p>
       <h2>About</h2>
       <p>I'm an AI/ML and data engineer with 8+ years of experience building production systems at enterprise scale — the kind where a wrong answer or a missed check has a real cost. My recent work centers on LLM agents and retrieval systems for operations teams, large-scale data pipelines, and automation frameworks that replace manual, error-prone processes.</p>
       <p>The pattern I keep coming back to: let the agent do the legwork, let guardrails decide what's allowed, and let humans own the decision — with validation and an audit trail at every step. Demos reward the happy path; production rewards the boring parts done well.</p>
@@ -58,6 +72,7 @@
 
   <section id="skills" class="section section-alt">
     <div class="container">
+      <p class="section-eyebrow">02 · Skills</p>
       <h2>Skills</h2>
       <div class="skills-grid">
         <div class="skill-card">
@@ -82,16 +97,19 @@
 
   <section id="projects" class="section">
     <div class="container">
+      <p class="section-eyebrow">03 · Projects</p>
       <h2>Featured Projects</h2>
       <p class="section-note">Open-source demos of the patterns behind my production work — original code, sample data only.</p>
       <div class="projects-grid">
 
-        <article class="project-card">
+        <article class="project-card project-card--featured">
           <img class="project-cover" src="covers/llm-knowledge-retrieval-agent.svg" alt="LLM Knowledge Retrieval Agent cover">
+          <div class="project-body">
           <h3><a href="https://github.com/rudhrestam/llm-knowledge-retrieval-agent" target="_blank" rel="noopener">LLM Knowledge Retrieval Agent</a></h3>
           <p class="project-where">Demo of production work at Morgan Stanley</p>
           <p>A retrieval agent that answers operations questions from runbooks and documentation, with sources cited — and a guardrail that makes it refuse rather than guess when nothing in the knowledge base supports an answer. In production, this pattern put team knowledge in reach of the whole operations team without external LLM tools.</p>
           <p class="tags">Python · scikit-learn · TF-IDF retrieval</p>
+          </div>
         </article>
 
         <article class="project-card">
@@ -196,14 +214,58 @@
 
   <section id="experience" class="section section-alt">
     <div class="container">
+      <p class="section-eyebrow">04 · Experience</p>
       <h2>Experience</h2>
-      <p>I started out as a Python developer and data engineer at Iplace Software Solutions, building ETL for medical-device and healthcare data, then moved to BlueCross BlueShield, where I automated multi-source healthcare claims processing with Spark and Kafka — 300 claims in parallel, ~45% faster processing, and 10–15% fewer rejections. From there I joined E*TRADE as a Python developer and data engineer, leading a Python 2.7 → 3.8+ migration of a legacy automation codebase to 80% test coverage and automating quarterly SEC regulatory data submissions, and spent time at GE Aviation building multi-source ingestion and data-quality workflows feeding analytics.</p>
-      <p>At McDonald's, as a senior Python developer and data engineer, I ran a global data pipeline across 6+ markets and built the Customer 360 churn platform over nightly restaurant sales data — models at 70–90% accuracy, with insights delivered daily. Today I'm a Database Automation Engineer at Morgan Stanley, where I build LLM retrieval tooling for the operations team and large-scale automation, including a post-reboot verification framework that checks the production and test server fleet.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="timeline-date">Mar 2025 — Present</p>
+          <div class="timeline-body">
+            <h3>Database Automation Engineer · Morgan Stanley, Alpharetta</h3>
+            <p>Building LLM retrieval tooling for the operations team and large-scale automation, including a post-reboot verification framework that checks the production and test server fleet.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">Sep 2022 — Mar 2025</p>
+          <div class="timeline-body">
+            <h3>Senior Python Developer / Data Engineer · McDonald's, Chicago</h3>
+            <p>Ran a global data pipeline across 6+ markets and built the Customer 360 churn platform over nightly restaurant sales data — models at 70–90% accuracy, with insights delivered daily.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">Sep 2021 — Aug 2022</p>
+          <div class="timeline-body">
+            <h3>Python Developer / Data Engineer · E*TRADE</h3>
+            <p>Led a Python 2.7 → 3.8+ migration of a legacy automation codebase to 80% test coverage and automated quarterly SEC regulatory data submissions.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">Feb — Aug 2021</p>
+          <div class="timeline-body">
+            <h3>Data Engineer · GE Aviation</h3>
+            <p>Built multi-source ingestion and data-quality workflows feeding analytics.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">Jan 2020 — Jan 2021</p>
+          <div class="timeline-body">
+            <h3>Python Developer / Data Engineer · BlueCross BlueShield</h3>
+            <p>Automated multi-source healthcare claims processing with Spark and Kafka — 300 claims in parallel, ~45% faster processing, and 10–15% fewer rejections.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">Jul 2016 — Sep 2018</p>
+          <div class="timeline-body">
+            <h3>Python Developer / Data Engineer · Iplace Software Solutions</h3>
+            <p>Built ETL for medical-device and healthcare data.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="certifications" class="section">
     <div class="container">
+      <p class="section-eyebrow">05 · Credentials</p>
       <h2>Certifications &amp; Education</h2>
       <div class="cert-grid">
         <div class="cert-card">
@@ -220,6 +282,7 @@
 
   <section id="contact" class="section section-alt">
     <div class="container">
+      <p class="section-eyebrow">06 · Contact</p>
       <h2>Contact</h2>
       <p>I'm looking for full-time AI/ML Engineer roles at product companies. The fastest way to reach me:</p>
       <div class="hero-links">
