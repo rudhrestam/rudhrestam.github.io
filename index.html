@@ -6,6 +6,9 @@
 <title>Rudresh — AI/ML Engineer</title>
 <meta name="description" content="Portfolio of Rudresh, AI/ML Engineer specializing in LLM agents, GenAI systems, and production data platforms.">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -84,6 +87,7 @@
       <div class="projects-grid">
 
         <article class="project-card">
+          <img class="project-cover" src="covers/llm-knowledge-retrieval-agent.svg" alt="LLM Knowledge Retrieval Agent cover">
           <h3><a href="https://github.com/rudhrestam/llm-knowledge-retrieval-agent" target="_blank" rel="noopener">LLM Knowledge Retrieval Agent</a></h3>
           <p class="project-where">Demo of production work at Morgan Stanley</p>
           <p>A retrieval agent that answers operations questions from runbooks and documentation, with sources cited — and a guardrail that makes it refuse rather than guess when nothing in the knowledge base supports an answer. In production, this pattern put team knowledge in reach of the whole operations team without external LLM tools.</p>
@@ -91,6 +95,7 @@
         </article>
 
         <article class="project-card">
+          <img class="project-cover" src="covers/server-health-verification-framework.svg" alt="Server Health Verification Framework cover">
           <h3><a href="https://github.com/rudhrestam/server-health-verification-framework" target="_blank" rel="noopener">Server Health Verification Framework</a></h3>
           <p class="project-where">Demo of production work at Morgan Stanley</p>
           <p>Parallel health-check automation: configurable checks run across many targets at once, with per-check validation, a summary report, and an audit log. The production version verifies the production and test server fleet after OS patching, with zero missed checks since launch.</p>
@@ -98,6 +103,7 @@
         </article>
 
         <article class="project-card">
+          <img class="project-cover" src="covers/customer-churn-prediction.svg" alt="Customer Churn Prediction cover">
           <h3><a href="https://github.com/rudhrestam/customer-churn-prediction" target="_blank" rel="noopener">Customer Churn Prediction</a></h3>
           <p class="project-where">Demo of production work at McDonald's</p>
           <p>Customer-360 style churn modeling: transaction, engagement, and feedback-sentiment features feed a classifier whose scores become a daily-insights summary. The production platform covered nightly restaurant sales data with models at 70–90% accuracy. This demo runs on synthetic data only.</p>
@@ -105,6 +111,7 @@
         </article>
 
         <article class="project-card">
+          <img class="project-cover" src="covers/global-etl-data-pipeline.svg" alt="Global ETL Data Pipeline cover">
           <h3><a href="https://github.com/rudhrestam/global-etl-data-pipeline" target="_blank" rel="noopener">Global ETL Data Pipeline</a></h3>
           <p class="project-where">Demo of production work at McDonald's</p>
           <p>Batch ETL with a data-quality layer that reverts and quarantines bad files instead of loading them — extract, validate every row, load clean data, reload safely after a fix. The production pipeline runs nightly across 6+ global markets.</p>
@@ -112,6 +119,7 @@
         </article>
 
         <article class="project-card">
+          <img class="project-cover" src="covers/solar-grid-efficiency-ai.svg" alt="Solar Grid Efficiency AI cover">
           <h3><a href="https://github.com/rudhrestam/solar-grid-efficiency-ai" target="_blank" rel="noopener">Solar Grid Efficiency AI</a></h3>
           <p class="project-where">Personal project — AI for energy systems</p>
           <p>Why does a solar plant export so much less than it generates? This demo simulates a 300 kWp plant on synthetic data, tracks every loss stage between the panels and the grid meter, and uses ML to forecast generation, flag underperforming strings, and rank the fixes by recoverable energy. In the demo run, 16.2% of generated energy never reaches the grid.</p>
@@ -119,6 +127,7 @@
         </article>
 
         <article class="project-card">
+          <img class="project-cover" src="covers/healthcare-claims-intelligence.svg" alt="Healthcare Claims Intelligence cover">
           <h3><a href="https://github.com/rudhrestam/healthcare-claims-intelligence" target="_blank" rel="noopener">Healthcare Claims Intelligence</a></h3>
           <p class="project-where">Demo project — synthetic data only</p>
           <p>Denial prediction on 5,930 synthetic claims: a GradientBoosting model (ROC-AUC 0.795) scores each claim's denial risk before submission, and the analysis ranks what's actually driving denials — missing prior authorisation denies at 63.9% vs 16.2% without — with an estimate of the denied dollars recoverable by fixing the top driver.</p>
@@ -126,6 +135,7 @@
         </article>
 
         <article class="project-card">
+          <img class="project-cover" src="covers/regulatory-reporting-data-quality.svg" alt="Regulatory Reporting Data Quality cover">
           <h3><a href="https://github.com/rudhrestam/regulatory-reporting-data-quality" target="_blank" rel="noopener">Regulatory Reporting Data Quality</a></h3>
           <p class="project-where">Demo project — synthetic data only</p>
           <p>A pre-submission data-quality framework for financial reporting extracts: 14 named checks across schema, completeness, validity, uniqueness, consistency, and reconciliation against a control file. In the demo run, all 295 planted defects in 5,040 synthetic records are caught and quarantined — a 94.15% DQ score.</p>
@@ -133,6 +143,7 @@
         </article>
 
         <article class="project-card">
+          <img class="project-cover" src="covers/restaurant-demand-forecasting.svg" alt="Restaurant Demand Forecasting cover">
           <h3><a href="https://github.com/rudhrestam/restaurant-demand-forecasting" target="_blank" rel="noopener">Restaurant Demand Forecasting</a></h3>
           <p class="project-where">Demo project — synthetic data only</p>
           <p>Daily demand forecasting for 8 synthetic restaurants. A RandomForest over day-of-week, holidays, weather, promotions, events, and feedback sentiment forecasts orders at MAE 28.0 (R² 0.832), beating a naive last-week baseline by 22.6% — then turns next week's forecast into prep and staffing tiers for each location.</p>
@@ -140,6 +151,7 @@
         </article>
 
         <article class="project-card">
+          <img class="project-cover" src="covers/server-log-anomaly-detection.svg" alt="Server Log Anomaly Detection cover">
           <h3><a href="https://github.com/rudhrestam/server-log-anomaly-detection" target="_blank" rel="noopener">Server Log Anomaly Detection</a></h3>
           <p class="project-where">Demo project — synthetic data only</p>
           <p>A generic log-anomaly demo over roughly 190K synthetic log lines from 10 hosts. Lines are parsed into per-host 30-minute windows and scored two ways — IsolationForest and per-host z-score baselines — catching 42 of 46 planted anomaly windows between them: an error burst, a latency spike, and one host failing slowly.</p>
@@ -147,7 +159,7 @@
         </article>
 
         <article class="project-card">
-          <img class="project-cover" src="covers/dbt-analytics-engineering.png" alt="dbt Analytics Engineering cover">
+          <img class="project-cover" src="covers/dbt-analytics-engineering.svg" alt="dbt Analytics Engineering cover">
           <h3><a href="https://github.com/rudhrestam/dbt-analytics-engineering" target="_blank" rel="noopener">dbt Analytics Engineering</a></h3>
           <p class="project-where">Personal project — synthetic data only</p>
           <p>A complete dbt project on synthetic restaurant sales data — staging → intermediate → marts in DuckDB, with revenue recomputed from line items rather than trusted from source totals. In the verified run, dbt build passes 39/39 (8 models, 31 tests) and the data-quality mart catches all 19 planted order-total mismatches, plus 12 orders with no line items.</p>
@@ -155,7 +167,7 @@
         </article>
 
         <article class="project-card">
-          <img class="project-cover" src="covers/langchain-rag-agent.png" alt="LangChain RAG Agent cover">
+          <img class="project-cover" src="covers/langchain-rag-agent.svg" alt="LangChain RAG Agent cover">
           <h3><a href="https://github.com/rudhrestam/langchain-rag-agent" target="_blank" rel="noopener">LangChain RAG Agent</a></h3>
           <p class="project-where">Personal project — synthetic data only</p>
           <p>A LangChain retrieval agent over 10 synthetic operations runbooks: documents are chunked, embedded with MiniLM, and indexed in FAISS; the agent answers only from retrieved passages, cites the source file for every answer, and refuses when nothing is close enough. On its 13-question evaluation it scores hit-rate@3 of 13/13 — every correct source at rank 1 — and refuses all 3 off-corpus probes.</p>
@@ -163,7 +175,7 @@
         </article>
 
         <article class="project-card">
-          <img class="project-cover" src="covers/docker-kubernetes-ml-service.png" alt="Docker &amp; Kubernetes ML Service cover">
+          <img class="project-cover" src="covers/docker-kubernetes-ml-service.svg" alt="Docker &amp; Kubernetes ML Service cover">
           <h3><a href="https://github.com/rudhrestam/docker-kubernetes-ml-service" target="_blank" rel="noopener">Docker &amp; Kubernetes ML Service</a></h3>
           <p class="project-where">Personal project — synthetic data only</p>
           <p>An ML inference service packaged the production way: a scikit-learn churn model (ROC-AUC 0.7964 on held-out synthetic data) served by FastAPI, containerised with Docker and deployed with Kubernetes manifests carrying health probes and resource limits. A 60-prediction smoke test reports p95 latency of 63.9 ms.</p>
@@ -171,6 +183,7 @@
         </article>
 
         <article class="project-card">
+          <img class="project-cover" src="covers/textile-refund-processing.svg" alt="Textile Refund Processing cover">
           <h3><a href="https://github.com/rudhrestam/textile-refund-processing" target="_blank" rel="noopener">Textile Refund Processing</a></h3>
           <p class="project-where">Demo project — synthetic data only</p>
           <p>A refund desk for a textile shop that takes the stress out of refunds: a policy engine gives staff a clear recommendation for every request, a guided workflow with an audit trail carries it through, kind customer messages go out at each step, and a short feedback survey after each resolution turns refunds into reviews. A 48-test suite covers every policy outcome, workflow move, and message template.</p>
