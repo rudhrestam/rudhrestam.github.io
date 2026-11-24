@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#475569"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.18" r="0.55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#glow)"/>
+  <g><path d="M640,170 L770,220 L770,330 Q770,430 640,470 Q510,430 510,330 L510,220 Z" fill="#ffffff" fill-opacity="0.25"/><polyline points="580,305 628,355 710,240" fill="none" stroke="#ffffff" stroke-opacity="0.7" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/></g>
+  <rect x="64" y="452" width="72" height="6" rx="3" fill="#ffffff" fill-opacity="0.85"/>
+  <text x="64" y="430" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="4" fill="#ffffff" fill-opacity="0.85">DATA QUALITY · 14 CHECKS</text>
+  <text x="64" y="540" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700" fill="#ffffff">Regulatory Reporting</text>
+  <text x="64" y="616" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700" fill="#ffffff">Data Quality</text>
+</svg>

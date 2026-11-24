@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#831843"/>
+      <stop offset="1" stop-color="#db2777"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.18" r="0.55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#glow)"/>
+  <g><path d="M540,300 C660,190 760,410 880,300 S1080,190 1160,300" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round"/><path d="M540,390 C660,280 760,500 880,390 S1080,280 1160,390" fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round"/></g>
+  <rect x="64" y="452" width="72" height="6" rx="3" fill="#ffffff" fill-opacity="0.85"/>
+  <text x="64" y="430" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="4" fill="#ffffff" fill-opacity="0.85">POLICY ENGINE · WORKFLOW</text>
+  <text x="64" y="540" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700" fill="#ffffff">Textile Refund</text>
+  <text x="64" y="616" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700" fill="#ffffff">Processing</text>
+</svg>
